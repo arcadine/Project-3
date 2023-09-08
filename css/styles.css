@@ -1,1 +1,134 @@
-/*# sourceMappingURL=styles.css.map */
+h2 {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+p {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.explore-btn {
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+  border-radius: 35px;
+  padding: 15px 20px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.explore-btn:hover {
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.header-image {
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hiw-icon {
+  color: #8d8d8d;
+}
+
+.hiw-label {
+  background-color: #f6f6f6;
+  padding: 10px 60px 10px 40px;
+  margin-left: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hiw-label-txt {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.hiw-num {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: #9356DC;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.hiw-num-txt {
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+}
+
+.hiw-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.hiw-step {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.hiw-step:hover .hiw-icon {
+  color: #9356DC;
+}
+.hiw-step:hover .hiw-label {
+  background-color: #f5edff;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.intro-blurb {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 35px 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+}
+
+.intro-sec {
+  text-align: center;
+}
+
+.location {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.location-text {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+}
+
+#iconLocation {
+  margin-right: 15px;
+}/*# sourceMappingURL=styles.css.map */
