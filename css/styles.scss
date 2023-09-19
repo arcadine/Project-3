@@ -132,6 +132,83 @@ p {
     font-weight: 500;
 }
 
+.new-ribbon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: $newTeal;
+    padding: 6px 25px;
+    border-radius: 5px;
+}
+
+.rest-bottom {
+    padding: 7px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rest-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.rest-fave {
+    font-size: 200%;
+    //background-image: none;
+    cursor: pointer;
+    background: none;
+}
+.rest-fave:hover{
+    background: linear-gradient(0deg, $omfPurple, $omfPink);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.rest-location {
+    margin-top: 0;
+}
+
+.rest-name {
+    margin-bottom: 5px;
+}
+
+.rest-pic {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    height: 200px;
+    object-fit: cover;
+}
+
+.rest-sec {
+    background-color: $lightGray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rest-top {
+    position: relative;
+}
+
+.ribbon-text {
+    font-family: $font-stack;
+    color: $newGreen;
+    font-weight: bold;
+}
+
 #iconLocation {
     margin-right: 15px;
 }
