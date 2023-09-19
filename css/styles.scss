@@ -157,20 +157,35 @@ p {
     border-radius: 15px;
 }
 
-.rest-fave {
-    font-size: 200%;
-    //background-image: none;
-    cursor: pointer;
-    background: none;
+.rest-fave-line {
+    display: block;
 }
-.rest-fave:hover{
-    background: linear-gradient(0deg, $omfPurple, $omfPink);
+
+/*
+.rest-fave-solid {
+    display: none;
+    background: linear-gradient(180deg, $omfPurple, $omfPink);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+*/
+    
+.rest-icon {
+    font-size: 200%;
+    color: black;
+    cursor: pointer;
+}
+.rest-icon:hover {
+    .rest-fave-line {
+        display: none;
+    }
+    #restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
+        display: block;
+    }
 }
 
 .rest-location {
@@ -191,12 +206,18 @@ p {
     object-fit: cover;
 }
 
+.rest-sec-h {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .rest-sec {
     background-color: $lightGray;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 20px;
 }
 
 .rest-top {
@@ -213,6 +234,16 @@ p {
     margin-right: 15px;
 }
 
+#restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
+    display: none;
+    background: linear-gradient(180deg, $omfPurple, $omfPink);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
 
 
 
