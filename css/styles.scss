@@ -1,5 +1,14 @@
 @import "colorsfonts";
 
+footer {
+    color: white;
+    background-color: $darkestGray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 20px;
+}
+
 h2 {
     font-family: $font-stack;
 }
@@ -8,18 +17,34 @@ p {
     font-family: $font-stack;
 }
 
-.explore-btn {
-    font-family: $font-stack;
-    color: white;
-    border-radius: 35px;
-    padding: 15px 20px;
-    background-image: linear-gradient($omfPink, $omfPurple);
-    border: none;
-    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .2);
+.footer-bottom-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
 }
-.explore-btn:hover {
-    background-image: linear-gradient($lightPink, $lightPurple);
-    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .4);
+
+.footer-bottom-txt {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer-top-items {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-top-txt {
+    margin-left: 15px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .header-image {
@@ -34,215 +59,10 @@ p {
     justify-content: center;
 }
 
-.hiw-icon {
-    color: $darkerGray;
-}
-
-.hiw-label { 
-    background-color: $lightGray;
-    padding: 10px 60px 10px 40px;
-    margin-left: 15px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .1);
-}
-
-.hiw-label-txt {
-    font-weight: 500;
-    margin-left: 20px;
-}
-
-.hiw-num {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    border-radius: 50%;
-    background-color: $omfPurple;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    justify-content: center;
-}
-
-.hiw-num-txt {
-    font-family: $font-stack;
-    color: white;
-}
-
-.hiw-sec {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 20px;
-    max-width: 100%;
-}
-
-.hiw-step {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 5px;
-}
-.hiw-step:hover {
-    .hiw-icon {
-        color: $omfPurple;
-    }
-    .hiw-label {
-        background-color: $lavender;
-        box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .3);
-    }
-}
-
-.intro-blurb {
-    background-color: $lightGray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px 35px 20px;
-}
-
-.intro-text {
-    font-size: 18px;
-}
-
-.intro-sec {
-    text-align: center;
-}
-
-.location{
-    background-color:  $darkGray;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, .2);
-}
-
-.location-text { 
-    font-family: $font-stack;
-    font-weight: 500;
-}
-
-.new-ribbon {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: $newTeal;
-    padding: 6px 25px;
-    border-radius: 5px;
-}
-
-.rest-bottom {
-    padding: 7px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.rest-card {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 15px;
-}
-
-.rest-fave-line {
-    display: block;
-}
-
-/*
-.rest-fave-solid {
-    display: none;
-    background: linear-gradient(180deg, $omfPurple, $omfPink);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-*/
-    
-.rest-icon {
-    font-size: 200%;
-    color: black;
-    cursor: pointer;
-}
-.rest-icon:hover {
-    .rest-fave-line {
-        display: none;
-    }
-    #restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
-        display: block;
-    }
-}
-
-.rest-location {
+.logo-text {
+    font-family: $logo-font;
     margin-top: 0;
-}
-
-.rest-name {
-    margin-bottom: 5px;
-}
-
-.rest-pic {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 15px 15px 0 0;
-    position: relative;
-    height: 200px;
-    object-fit: cover;
-}
-
-.rest-sec-h {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.rest-sec {
-    background-color: $lightGray;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.rest-top {
-    position: relative;
-}
-
-.ribbon-text {
-    font-family: $font-stack;
-    color: $newGreen;
-    font-weight: bold;
-}
-
-#iconLocation {
-    margin-right: 15px;
-}
-
-#restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
-    display: none;
-    background: linear-gradient(180deg, $omfPurple, $omfPink);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    padding-top: 0;
 }
 
 
