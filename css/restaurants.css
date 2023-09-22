@@ -35,11 +35,20 @@ main {
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-  padding: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+.menu-item:hover .menu-item-right {
+  margin-right: 0;
+}
+.menu-item:hover .menu-item-right i {
+  transform: rotate(360deg);
 }
 
 .menu-item-desc {
@@ -52,6 +61,15 @@ main {
 .menu-item-desc p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.menu-item-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
 }
 
 .menu-item-name {
@@ -67,16 +85,20 @@ main {
   font-weight: bold;
 }
 
-.menu-item-select {
+.menu-item-right {
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   width: 20%;
+  margin-right: -70px;
+  transition: margin-right 1s;
 }
-.menu-item-select i {
+.menu-item-right i {
   color: white;
   font-size: 150%;
   padding: 20px;
   text-align: center;
+  transform: rotate(90deg);
+  transition: transform 1s;
 }
 
 .menu-sec-h {
@@ -105,9 +127,9 @@ main {
 .rest-menu {
   background-color: #f6f6f6;
   border-radius: 25px 25px 0 0;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 200px;
+  margin-top: -40px;
 }
 
 .rest-name {
