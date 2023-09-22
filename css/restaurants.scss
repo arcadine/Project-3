@@ -1,0 +1,57 @@
+@import "colorsfonts";
+
+main {
+    position: relative;
+}
+
+.arrow-container {
+    width: 30%;
+}
+
+.header-img-rest {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.menu-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+
+.rest-img {
+    width: 100%;
+}
+
+.rest-fave-line {
+    font-size: 150%
+}
+
+.rest-menu {
+    background-color: $lightGray;
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+
+.rest-name {
+    font-family: $logo-font;
+
+}
+
+.rest-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#arrowBast {
+    color: black;
+    font-size: 150%;
+    margin-left: 20px;
+}
