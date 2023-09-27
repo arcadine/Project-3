@@ -8,13 +8,27 @@ main {
     width: 30%;
 }
 
-.entrees {
-    padding: 0 20px 20px 20px;
-}
-
 .header-img-rest {
     width: 100%;
     padding: 20px 0;
+}
+
+.item-ingredients {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.item-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
 }
 
 .menu-group-name {
@@ -34,6 +48,7 @@ main {
 }
 
 .menu-item {
+    position: relative;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
@@ -41,14 +56,29 @@ main {
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
+    margin: 5px 0 15px 0;
 }
 .menu-item:hover{
     cursor: pointer;
     .menu-item-right {
-        margin-right: 0;
+        right: 0;
         i {
             transform: rotate(360deg); 
         }
+    }
+    .menu-item-left {
+        margin-right: 65px;
+        width: 75%;
+        // .menu-item-desc {
+        //     .item-ingredients {
+        //         width: 70%;
+        //     }
+        // }
+        // .menu-item-name {
+        //     .item-name {
+        //         width: 70%;
+        //     }
+        // }
     }
 }
 
@@ -58,10 +88,6 @@ main {
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
-    p {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
 }
 
 .menu-item-left {
@@ -71,27 +97,32 @@ main {
     padding: 10px;
     gap: 10px;
     width: 100%;
+    margin-right: 0;
+    transition: margin-right 1s, width 1s;
 }
 
 .menu-item-name {
     font-weight: bold;
     font-size: 110%;
-    p {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
 }
 
 .menu-item-price {
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .menu-item-right {
-    background-color: $newTeal;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
     border-radius: 0 15px 15px 0;
-    width: 20%;
-    margin-right: -70px;
-    transition: margin-right 1s;
+    height: 100%;
+    right: -80px;
+    transition: right 1s;
     i {
         color: white;
         font-size: 150%;
@@ -100,6 +131,10 @@ main {
         transform: rotate(90deg);
         transition: transform 1s;
     }
+}
+
+.menu-sec {
+    padding: 0 20px 20px 20px;
 }
 
 .menu-sec-h {
@@ -115,6 +150,29 @@ main {
     margin-top: 0;
     margin-left: 0;
     width: 12%;
+}
+
+.order-btn {
+    font-family: $font-stack;
+    color: white;
+    border-radius: 35px;
+    padding: 15px 15px;
+    width: 35%;
+    background-image: linear-gradient($omfPink, $omfPurple);
+    border: none;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .2);
+}
+.order-btn:hover {
+    background-image: linear-gradient($lightPink, $lightPurple);
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .4);
+}
+
+.order-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 70px 20px;
 }
 
 .rest-img {
