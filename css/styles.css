@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 footer {
   color: white;
   background-color: #353535;
@@ -27,12 +31,14 @@ p {
   padding-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+  color: white;
 }
 
 .footer-top-items {
   font-weight: bold;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -71,4 +77,12 @@ p {
 
 .placeholder {
   width: 30%;
+}
+
+.top-items-l {
+  width: 5%;
+}
+
+.top-items-r {
+  width: 95%;
 }/*# sourceMappingURL=styles.css.map */
