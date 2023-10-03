@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 footer {
@@ -62,6 +63,14 @@ p {
   justify-content: center;
 }
 
+.home-icon {
+  font-size: 200%;
+}
+
+.rest-h-icon {
+  font-size: 24px;
+}
+
 .logo-container {
   width: 40%;
   display: flex;
@@ -79,10 +88,37 @@ p {
   width: 30%;
 }
 
+.rest-fave-line {
+  display: block;
+}
+
+.rest-icon {
+  color: black;
+  cursor: pointer;
+}
+
+.rest-icon:hover .rest-fave-line {
+  display: none;
+}
+.rest-icon:hover #restFaveSolid1, .rest-icon:hover #restFaveSolid2, .rest-icon:hover #restFaveSolid3, .rest-icon:hover #restFaveSolid4 {
+  display: block;
+}
+
 .top-items-l {
   width: 5%;
 }
 
 .top-items-r {
   width: 95%;
+}
+
+#restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
+  display: none;
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,19 @@
 @import "colorsfonts";
 
+@keyframes load-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+body {
+    animation-duration: 3s;
+    animation-name: load-fade;
+    animation-fill-mode: forwards;
+}
+
 .explore-btn {
     font-family: $font-stack;
     color: white;
@@ -127,7 +141,7 @@
 }
 
 .rest-bottom {
-    padding: 7px 20px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -141,40 +155,10 @@
     justify-content: center;
     border-radius: 15px;
 }
-
-.rest-fave-line {
-    display: block;
-}
-
-/*
-.rest-fave-solid {
-    display: none;
-    background: linear-gradient(180deg, $omfPurple, $omfPink);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-*/
-    
-.rest-icon {
-    font-size: 200%;
-    color: black;
-    cursor: pointer;
-}
-.rest-icon:hover {
-    .rest-fave-line {
-        display: none;
-    }
-    #restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
-        display: block;
-    }
-}
-
+ 
 .rest-location {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .rest-name {
@@ -222,13 +206,3 @@
     margin-right: 15px;
 }
 
-#restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
-    display: none;
-    background: linear-gradient(180deg, $omfPurple, $omfPink);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}

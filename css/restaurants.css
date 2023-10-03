@@ -103,7 +103,8 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 5px;
+  font-size: 95%;
 }
 
 .menu-item-left {
@@ -113,6 +114,7 @@ main {
   padding: 10px;
   gap: 10px;
   width: 100%;
+  overflow: hidden;
   margin-right: 0;
   transition: margin-right 1s, width 1s;
 }
@@ -199,10 +201,6 @@ main {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-
-.rest-fave-line {
-  font-size: 150%;
 }
 
 .rest-menu {

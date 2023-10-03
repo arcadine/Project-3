@@ -2,6 +2,7 @@
 
 a {
     text-decoration: none;
+    font-family: $font-stack
 }
 
 footer {
@@ -64,6 +65,14 @@ p {
     justify-content: center;
 }
 
+.home-icon {
+    font-size: 200%;
+}
+
+.rest-h-icon {
+    font-size: 24px;
+}
+
 .logo-container {
     width: 40%;
     display: flex;
@@ -81,6 +90,23 @@ p {
     width: 30%;
 }
 
+.rest-fave-line {
+    display: block;
+}
+
+.rest-icon {
+    color: black;
+    cursor: pointer;
+}
+.rest-icon:hover {
+    .rest-fave-line {
+        display: none;
+    }
+    #restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
+        display: block;
+    }
+}
+
 .top-items-l {
     width: 5%;
 }
@@ -89,3 +115,13 @@ p {
     width: 95%;
 }
 
+#restFaveSolid1, #restFaveSolid2, #restFaveSolid3, #restFaveSolid4 {
+    display: none;
+    background: linear-gradient(180deg, $omfPurple, $omfPink);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
