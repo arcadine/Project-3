@@ -125,3 +125,19 @@ p {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
+//Tablet styling
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .header-img {
+        width: 60%;
+    }
+    
+    .top-items-l {
+        width: 2%;
+    }
+
+    .top-items-r {
+        width: 98%;
+    }
+}

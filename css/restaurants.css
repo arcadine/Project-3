@@ -226,4 +226,29 @@ main {
   color: black;
   font-size: 150%;
   margin-left: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .menu-group-name {
+    font-size: 120%;
+  }
+  .menu-item:hover .menu-item-left {
+    margin-right: 0;
+    width: 87%;
+  }
+  .menu-item-left {
+    font-size: 110%;
+  }
+  .menu-underline {
+    width: 6%;
+  }
+  .order-btn {
+    font-size: 120%;
+  }
+  .rest-img {
+    height: 350px;
+  }
+  .rest-name {
+    font-size: 180%;
+  }
 }/*# sourceMappingURL=restaurants.css.map */

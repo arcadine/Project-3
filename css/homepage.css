@@ -98,6 +98,15 @@ body {
   box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
+.hiw-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 .intro-blurb {
   background-color: #f6f6f6;
   display: flex;
@@ -203,4 +212,39 @@ body {
 
 #iconLocation {
   margin-right: 15px;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .intro-text {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .hiw-label-txt {
+    font-size: 110%;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  .hiw-sec {
+    align-items: center;
+  }
+  .hiw-wrapper {
+    width: 80%;
+    align-items: center;
+    gap: 20px;
+  }
+  .rest-card {
+    width: 80%;
+  }
+  .rest-desc {
+    font-size: 115%;
+  }
+  .rest-pic {
+    height: 280px;
+  }
+  .rest-sec {
+    align-items: center;
+  }
+  .rest-sec-h {
+    text-align: center;
+  }
 }/*# sourceMappingURL=homepage.css.map */
