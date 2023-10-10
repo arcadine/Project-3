@@ -30,6 +30,7 @@ body {
 .hiw-h {
   margin-top: 0;
   padding-top: 0;
+  margin-bottom: 0;
 }
 
 .hiw-icon {
@@ -163,6 +164,15 @@ body {
   border-radius: 15px;
 }
 
+.rest-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
 .rest-location {
   margin-top: 0;
   margin-bottom: 0;
@@ -171,6 +181,11 @@ body {
 .rest-name {
   margin-bottom: 5px;
   color: black;
+}
+
+.rest-name:hover {
+  cursor: pointer;
+  color: #9356DC;
 }
 
 .rest-pic {
@@ -210,6 +225,15 @@ body {
   font-weight: bold;
 }
 
+.step-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
 #iconLocation {
   margin-right: 15px;
 }
@@ -233,6 +257,9 @@ body {
     gap: 20px;
   }
   .rest-card {
+    width: 100%;
+  }
+  .rest-card-wrapper {
     width: 80%;
   }
   .rest-desc {
@@ -246,5 +273,59 @@ body {
   }
   .rest-sec-h {
     text-align: center;
+  }
+}
+@media (min-width: 993px) {
+  .intro-text {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .hiw-icon {
+    font-size: 125%;
+  }
+  .hiw-label-txt {
+    font-size: 125%;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  .hiw-sec {
+    align-items: center;
+  }
+  .hiw-step {
+    width: 33%;
+  }
+  .hiw-wrapper {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .rest-card {
+    width: 45%;
+  }
+  .rest-card-wrapper {
+    width: 100%;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .rest-desc {
+    font-size: 125%;
+  }
+  .rest-pic {
+    height: 280px;
+  }
+  .rest-sec {
+    align-items: center;
+  }
+  .rest-sec-h {
+    text-align: center;
+  }
+  .step-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
   }
 }/*# sourceMappingURL=homepage.css.map */

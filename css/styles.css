@@ -133,4 +133,24 @@ p {
   .top-items-r {
     width: 98%;
   }
+}
+@media (min-width: 993px) {
+  h2 {
+    font-size: 180%;
+  }
+  .header-img {
+    width: 30%;
+  }
+  .footer-bottom-items, .footer-top-items {
+    font-size: 120%;
+  }
+  .rest-h-icon {
+    font-size: 200%;
+  }
+  .top-items-l {
+    width: 1%;
+  }
+  .top-items-r {
+    width: 99%;
+  }
 }/*# sourceMappingURL=styles.css.map */
