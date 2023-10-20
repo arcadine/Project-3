@@ -1,5 +1,9 @@
 @import "colorsfonts";
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     font-family: $font-stack
