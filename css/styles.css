@@ -152,9 +152,19 @@ p {
     margin-bottom: 0;
     gap: 13px;
   }
-  .footer-bottom-items:hover, .footer-top-items:hover {
+  .footer-bottom-items:hover {
     color: #fa98de;
     cursor: pointer;
+  }
+  .footer-bottom-txt:hover {
+    color: #fa98de;
+  }
+  .footer-top-items:hover {
+    color: #fa98de;
+    cursor: pointer;
+  }
+  .footer-top-txt:hover {
+    color: #fa98de;
   }
   .header-img {
     width: 30%;
