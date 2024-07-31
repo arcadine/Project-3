@@ -139,14 +139,25 @@ p {
   }
 }
 @media (min-width: 993px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   h2 {
     font-size: 180%;
+  }
+  .footer-bottom-items, .footer-top-items {
+    font-size: 120%;
+    margin-bottom: 0;
+    gap: 13px;
   }
   .header-img {
     width: 30%;
   }
-  .footer-bottom-items, .footer-top-items {
-    font-size: 120%;
+  .logo-text {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .rest-h-icon {
     font-size: 200%;
