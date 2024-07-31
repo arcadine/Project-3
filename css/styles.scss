@@ -164,6 +164,9 @@ p {
         margin-bottom: 0;
         gap: 13px;
     }
+    .footer-bottom-items:hover, .footer-top-items:hover {
+        color: $lightPink;
+    }
 
     .header-img {
         width: 30%;
